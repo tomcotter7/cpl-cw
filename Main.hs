@@ -2,10 +2,11 @@
 Compilers Course (COMP3012), 2021
   Venanzio Capretta
   Nicolai Kraus
+  
+  extended by Thomas Cotter
 
-A Compiler and evaluator for Arithmetic expressions with booleans,
-relations, and conditional expressions.
-Compiles simple Arith Expr into TAM programs.
+A Compiler for the MiniTriangle language. Compiles .mt files into .tam programs.
+Can run .tam programs in the TAM Virtual Machine
 
 Main executable.
 -}
@@ -20,21 +21,10 @@ import ExecuteTAM
 import System.Environment
 import Data.Char
 
-{- If input file has extension .exp, compile the expression to TAM code
-   If input file has extension .tam, execute tam code
-
-   Options:
-   --run : run the TAM code of the .exp source directly
-           without generating a .tam file
-   --evaluate : evaluate the .exp expression without generating TAM code
-   --trace : trace the execution of .tam code
--}
 
 data FileType = EXP | TAM | MT
   deriving (Eq,Show)
 
-data Option = Trace | Run | Evaluate
-  deriving (Eq,Show)
 
 main :: IO Stack
 main = do args <- getArgs

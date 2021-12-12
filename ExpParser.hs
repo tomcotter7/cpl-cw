@@ -4,10 +4,9 @@ Compilers Course (COMP3012), 2021
   Venanzio Capretta
   Nicolai Kraus
 
-Parser by Venanzio Capretta (based on Henrik Nilsson 2006-2013).
-Parser for Arithmetic expressions, generating an Abstract Syntax
-Tree from an expression (a string).
-Uses functional parsers.
+  extended by Thomas Cotter
+
+Uses functional parsers to parse MiniTriangle programs into a Abstract Syntax Tree
 
 -}
 

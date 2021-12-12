@@ -4,9 +4,9 @@ Compilers Course (COMP3012), 2021
   Venanzio Capretta
   Nicolai Kraus
 
-A Compiler and evaluator for Arithmetic expressions with booleans,
-relations, and conditional expressions.
-Compiles simple Arith Expr into TAM programs.
+  extended by Thomas Cotter
+
+Compiles MiniTriangle Programs into TAM programs
 
 -}
 

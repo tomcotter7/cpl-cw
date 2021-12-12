@@ -3,12 +3,12 @@
 Compilers Course (COMP3012), 2021
   Venanzio Capretta
   Nicolai Kraus
+        
+  extended by Thomas Cotter
 
 TAM Virtual Machine
 
-Minimal implementation by Venanzio Capretta.
-Supports: Arithmetic expressions, Boolean, Relational, and
-Conditional Operators.
+Supports: MiniTriangle Language
 
 -}
 

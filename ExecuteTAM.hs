@@ -1,3 +1,10 @@
+{-
+ By Thomas Cotter
+
+ Executes TAM programs.
+-}
+
+
 module ExecuteTAM where
 
 import TAM
