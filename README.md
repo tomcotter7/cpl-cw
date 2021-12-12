@@ -9,4 +9,5 @@ Run
 then you can pass .tam and .mt files into the compiler like so
 
 ``` ./mtc program.tam
-    ./mtc program.mt ```
+    ./mtc program.mt 
+```
