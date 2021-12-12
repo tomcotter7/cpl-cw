@@ -10,7 +10,7 @@ in begin
       fib := a;
       a := b;
       b := fib + a;
-      i := i+1
-    end;
-  printint (fib)
+      i := i+1;	
+  	  printint (fib)
+    end
 end

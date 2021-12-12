@@ -4,6 +4,7 @@ import TAM
 import Data.List
 import Data.Maybe
 import StateMonad
+import System.IO
 
 data TAMValue = TAMValue {
     ts :: [TAMInst],
@@ -47,7 +48,8 @@ exec (STORE a) = do v <- tsPop
 exec PUTINT = do v <- tsPop
                  lift (putStrLn ("output > " ++ (show v)))
                  continueT
-exec GETINT = do lift (putStr ("input >")) 
+exec GETINT = do lift (putStr ("input : ")) 
+                 lift (hFlush stdout)
                  i <- lift (getLine)
                  tsPush (read i)
                  continueT
